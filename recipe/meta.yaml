@@ -1,5 +1,5 @@
 {% set name = "pydatamail" %}
-{% set version = "0.0.5" %}
+{% set version = "0.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pydatamail-{{ version }}.tar.gz
-  sha256: 4be682fda77c49ab17f06297572320c1e33e8e1b6ca32e821b6f42d48e1ee27d
+  sha256: 0a5e2e3dbdb1ad50e4d232ba8c32c2d998a08de3192f39427a0879280df4208e
 
 build:
   noarch: python
@@ -20,12 +20,11 @@ requirements:
     - python >=3.6
   run:
     - matplotlib-base >=3.5.2
-    - numpy >=1.22.4
-    - pandas >=1.4.2
+    - numpy >=1.23.0
+    - pandas >=1.4.3
     - python >=3.6
-    - sqlalchemy >=1.4.37
+    - sqlalchemy >=1.4.39
     - tqdm >=4.64.0
-    - scikit-learn >=1.1.1
 
 test:
   imports:
