@@ -1,5 +1,5 @@
 {% set name = "pydatamail" %}
-{% set version = "0.0.6" %}
+{% set version = "0.0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pydatamail-{{ version }}.tar.gz
-  sha256: 0a5e2e3dbdb1ad50e4d232ba8c32c2d998a08de3192f39427a0879280df4208e
+  sha256: 30725e232187db3d48fde4a620ec3a31672c7e3452d3ddd0ec273be83a2c350c
 
 build:
   noarch: python
